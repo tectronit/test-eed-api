@@ -1,8 +1,9 @@
 services:
   - type: web
     name: test-eed-api
-    runtime: php
+    env: docker
     plan: free
     buildCommand: ""
     startCommand: php -S 0.0.0.0:10000 index.php
-    envVars: []
+    autoDeploy: true
+
